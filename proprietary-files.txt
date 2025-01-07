@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from Spacewar-U2.6-240705-1617-(2.6.0)
+# All unpinned blobs are extracted from Spacewar-V3.0-241211-0926-(3.0-OB1)
 
 # ACDB
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
@@ -630,6 +630,7 @@ vendor/bin/netmgrd|4254e808131fa3a13aec1474bb769dbd539379ff
 
 # Diag
 -vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/lib/vendor.qti.diaghal@1.0.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
@@ -638,16 +639,11 @@ vendor/lib/vendor.qti.diaghal@1.0.so
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Dirac
-system/etc/permissions/com.dirac.acs.xml
-system/etc/permissions/se.dirac.acs.xml
-system/etc/sysconfig/preinstalled-packages-dirac.xml
-system/priv-app/DiracAudioControlService/DiracAudioControlService.apk
-system/priv-app/DiracAudioControlService_DMP/DiracAudioControlService_DMP.apk
-system/priv-app/NothingDiracService/NothingDiracService.apk
+system/etc/sysconfig/preinstalled-packages-audioeffect.xml
+system/priv-app/NothingAudioEffectService/NothingAudioEffectService.apk
 vendor/etc/dirac/dirac_resource.dar
-vendor/etc/dirac/interface.json
 vendor/lib/libdirac.so
-vendor/lib/soundfx/libdiraceffect-afm.so
+vendor/lib/soundfx/libdiraceffect_NT.so
 
 # Display Calibration data
 vendor/etc/qdcm_calib_data_rm692e5_amoled_fhd+_120hz_cmd_mode_dsi_visionox_panel.xml
@@ -715,7 +711,6 @@ system_ext/lib64/libdpmctmgr.so|206949728b98a513683468209dbce86ed29412b8
 system_ext/lib64/libdpmfdmgr.so|da636fca9a9a91a897d17fd519448b10053a696b
 system_ext/lib64/libdpmframework.so|d974f04f110b3c1a1282d78bb0ff8a29dc022439
 system_ext/lib64/libdpmtcm.so|5521469cac3a2bec3da66cd36637df83ee59b97e
-system_ext/lib64/vendor.qti.diaghal@1.0.so|8afba353fd94d2e955dd626a0eb8029530219732
 system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so|de7501e60ba32563721022eb8ad0ca0230a7c03b
 system_ext/lib64/vendor.qti.hardware.dpmservice@1.1.so|183028009a4a77c85623a1cd50ba6b1a5340ef96
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|ebf1f753ed24f8b6ba87c5f27c628889c38d0a85
@@ -763,6 +758,7 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
+vendor/lib64/libesepmconfig.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
@@ -797,11 +793,8 @@ vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/seccomp_policy/gnss@2.0-base.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy
 vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
-vendor/etc/vintf/manifest/vendor.qti.gnss@4.2-service.xml
-vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.3-service.xml
 vendor/lib/libbatching.so
 vendor/lib/libgeofencing.so
 vendor/lib/libgnss.so
@@ -809,7 +802,7 @@ vendor/lib/libgps.utils.so
 vendor/lib/libloc_core.so
 vendor/lib/liblocation_api.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
-vendor/lib64/hw/vendor.qti.gnss@4.2-impl.so
+vendor/lib64/hw/vendor.qti.gnss@4.3-impl.so
 vendor/lib64/libbatching.so
 vendor/lib64/libgeofencing.so
 vendor/lib64/libgnss.so
@@ -824,8 +817,9 @@ vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.gnss@4.1.so
-vendor/lib64/vendor.qti.gnss@4.2-service.so
 vendor/lib64/vendor.qti.gnss@4.2.so
+vendor/lib64/vendor.qti.gnss@4.3-service.so
+vendor/lib64/vendor.qti.gnss@4.3.so
 
 # GPS
 vendor/app/CACertService/CACertService.apk
@@ -836,13 +830,7 @@ vendor/bin/mlid
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
-vendor/bin/xtwifi-inet-agent
-vendor/etc/cacert_location.pem
-vendor/etc/xtra_root_cert.pem
 vendor/lib64/libaoa.so
-vendor/lib64/libasn1cper.so
-vendor/lib64/libasn1crt.so
-vendor/lib64/libasn1crtx.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgarden.so
@@ -866,8 +854,6 @@ vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_server_protocol.so
-vendor/lib64/libxtwifi_server_protocol_uri_v3.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
@@ -1109,8 +1095,11 @@ vendor/lib64/libspcom.so
 # QCC
 system_ext/app/QCC/QCC.apk
 system_ext/bin/qccsyshal@1.2-service
+system_ext/bin/qccsyshal_aidl-service
 system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
+system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc
 system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
+system_ext/etc/vintf/manifest/vendor.qti.qccsyshal_aidl-service.xml
 system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
 system_ext/lib64/libqccdme.so
@@ -1120,6 +1109,8 @@ system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-halimpl.so
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/bin/qcc-trd
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
@@ -1584,7 +1575,6 @@ system_ext/lib/libwfduibcsinkinterface.so
 system_ext/lib/libwfduibcsrc.so
 system_ext/lib/libwfduibcsrcinterface.so
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
-system_ext/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so
 system_ext/lib64/libmmrtpdecoder.so
 system_ext/lib64/libmmrtpencoder.so
 system_ext/lib64/libwfdavenhancements.so
@@ -1605,6 +1595,7 @@ system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so
 system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
